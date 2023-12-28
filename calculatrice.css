@@ -1,0 +1,52 @@
+/* Style pour le corps (body) de la page */
+body {
+    display: flex; /* Utiliser le modèle de boîte flexible (Flexbox) */
+    align-items: center; /* Centrer les éléments sur l'axe vertical */
+    justify-content: center; /* Centrer les éléments sur l'axe horizontal */
+    height: 100vh; /* 100% de la hauteur de la vue (viewport height) */
+    margin: 0; /* Supprimer les marges par défaut du corps */
+    background-color: #f4f4f4; /* Couleur de fond gris clair */
+  }
+  
+  /* Style pour la calculatrice (div avec la classe "calculator") */
+  .calculator {
+    text-align: center; /* Centrer le texte à l'intérieur de la calculatrice */
+    background-color: #fff; /* Couleur de fond blanche */
+    border-radius: 8px; /* Coins arrondis de 8 pixels */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+    padding: 20px; /* Espace intérieur de 20 pixels */
+    width: 300px; /* Largeur fixe de 300 pixels */
+  }
+  
+  /* Style pour l'élément d'affichage du résultat (input avec l'ID "result") */
+  #result {
+    width: 90%; /* Largeur de 90% de son contenant */
+    margin: 0 auto; /* Centrer l'élément horizontalement en utilisant des marges automatiques */
+    margin-bottom: 10px; /* Marge en bas de 10 pixels pour l'espacement */
+    padding: 10px; /* Espace intérieur de 10 pixels */
+    font-size: 18px; /* Taille de police de 18 pixels */
+  }
+  
+  /* Style pour les boutons (div avec la classe "buttons") */
+  .buttons {
+    display: grid; /* Utiliser le modèle de boîte grille (Grid) */
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales dans la grille */
+    gap: 10px; /* Espace de 10 pixels entre les éléments de la grille */
+  }
+  
+  /* Style pour les boutons (éléments de type button) */
+  button {
+    width: 100%; /* Largeur de 100% de son contenant */
+    padding: 15px; /* Espace intérieur de 15 pixels */
+    font-size: 18px; /* Taille de police de 18 pixels */
+    border: none; /* Supprimer la bordure par défaut */
+    cursor: pointer; /* Afficher un curseur de type pointeur au survol */
+    border-radius: 4px; /* Coins arrondis de 4 pixels */
+  }
+  
+  /* Style spécifique pour les boutons opérateurs (éléments de type button avec la classe "operator") */
+  button.operator {
+    background-color: #ff9800; /* Couleur de fond orange */
+    color: #fff; /* Couleur du texte blanc */
+  }
+  
